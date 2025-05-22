@@ -1,0 +1,13 @@
+body {
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    background-color: #f0f0f0;
+}
+
+code {
+    font-family: "Courier New", monospace;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}

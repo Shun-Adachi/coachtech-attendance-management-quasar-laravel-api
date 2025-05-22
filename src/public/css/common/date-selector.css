@@ -1,0 +1,50 @@
+.date-selector {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.date-selector__link {
+    align-content: center;
+    height: 100%;
+    margin: auto 0px;
+    padding: 0px 20px;
+    color: #737373;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 2.4px;
+}
+
+.date-selector__group {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin: auto 0px;
+}
+
+.date-selector__image--calendar {
+    align-content: center;
+    height: 50%;
+    margin: auto 20px;
+}
+
+.date-selector__image--arrow {
+    align-content: center;
+    height: 30%;
+    margin: auto 10px;
+}
+
+.date-selector__header {
+    align-content: center;
+    margin: auto 0px;
+    font-size: 20px;
+}

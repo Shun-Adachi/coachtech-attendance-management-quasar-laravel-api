@@ -1,0 +1,119 @@
+.form {
+    margin: 150px auto 100px auto;
+    width: 600px;
+    text-align: center;
+}
+
+.form__text {
+    width: 100px;
+    height: 40px;
+    margin: 20px auto;
+    padding: 5px 5px;
+    border-radius: 50px;
+    background-color: #c0c0c0;
+    color: #696969;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.7px;
+}
+
+.form__input--date {
+    width: 100%;
+    margin: 10px auto;
+    background-color: #c0c0c000;
+    border: none;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form__input--date:focus {
+    outline: none;
+    border: none;
+}
+
+.form__input--time {
+    width: 100%;
+    margin: 10px auto;
+    background-color: #c0c0c000;
+    border: none;
+    text-align: center;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.form__input--time:focus {
+    outline: none;
+    border: none;
+}
+
+.form__group {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.form__button--clock-in {
+    width: 220px;
+    margin: auto 40px;
+    padding: 15px 30px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.8px;
+}
+
+.form__button--break {
+    width: 220px;
+    margin: auto 40px;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 20px;
+    border: none;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.8px;
+}
+
+.form__button--clock-out {
+    width: 220px;
+    margin: auto 40px;
+    padding: 15px 10px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.8px;
+}
+
+.form__text--thanks {
+    margin: 20px auto;
+    padding: 5px 5px;
+    border-radius: 20px;
+    color: #000;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 3.9px;
+}

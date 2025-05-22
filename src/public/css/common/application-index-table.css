@@ -1,0 +1,75 @@
+.table {
+    table-layout: fixed;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #737373;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.table th {
+    border-bottom: 3px solid #f0f0f0;
+}
+
+.table tr {
+    height: 50px;
+}
+
+.table td {
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.status {
+    width: 15%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    letter-spacing: 2.4px;
+}
+
+.name {
+    width: 15%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    letter-spacing: 2.4px;
+}
+
+.date {
+    width: 15%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.note {
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+    letter-spacing: 2.4px;
+}
+
+.detail {
+    width: 15%;
+    text-align: left;
+    text-decoration: none;
+}
+
+.link {
+    width: 15%;
+    color: #000000;
+    text-align: left;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .table {
+        font-size: small;
+    }
+}

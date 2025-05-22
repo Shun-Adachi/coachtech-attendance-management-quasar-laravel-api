@@ -1,0 +1,36 @@
+.table {
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #737373;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+
+.table th {
+    min-width: 60px;
+    padding: 10px 0px 10px 4%;
+    border-bottom: 3px solid #e1e1e1;
+    text-align: left;
+}
+
+.table tr {
+    border-bottom: 2px solid #e1e1e1;
+}
+
+.table tr:last-child {
+    border-bottom: none;
+}
+
+.table td {
+    padding: 10px 0px 10px 4%;
+}
+
+.detail {
+    color: #000000;
+    text-decoration: none;
+}

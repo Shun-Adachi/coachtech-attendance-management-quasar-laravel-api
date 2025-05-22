@@ -1,0 +1,160 @@
+.form {
+}
+
+.table {
+    width: 100%;
+    margin: 40px auto 0px auto;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+
+.table tr {
+    height: 80px;
+}
+
+.table th {
+    width: 40%;
+    height: 100%;
+    min-width: 150px;
+    max-width: 400px;
+    padding: 0px 0px 0px 5%;
+    color: #737373;
+    border-bottom: 3px solid #f0f0f0;
+    text-align: left;
+}
+
+.table td {
+    height: 100%;
+    color: #000000;
+    border-bottom: 3px solid #f0f0f0;
+}
+
+.name {
+    padding-left: 20px;
+}
+
+.start-time {
+    width: 100px;
+}
+
+.tilde {
+    width: 100px;
+    text-align: center;
+}
+
+.end-time {
+}
+
+.input--active {
+    width: 100px;
+    padding: 5px 10px;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    font-weight: bold;
+}
+
+.input--inactive {
+    width: 100px;
+    padding: 5px 10px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    outline: none;
+}
+
+.textarea--active {
+    width: 300px;
+    height: 60px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    resize: none;
+}
+
+.textarea--inactive {
+    width: 300px;
+    height: 60px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    resize: none;
+}
+
+.button {
+    float: right;
+    width: 130px;
+    height: 50px;
+    margin: 80px 0px 80px auto;
+    padding: 10px;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.3px;
+}
+
+.button--approved {
+    float: right;
+    width: 130px;
+    height: 50px;
+    margin: 80px 0px 80px auto;
+    padding: 10px;
+    background-color: #696969;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.3px;
+    cursor: default;
+    pointer-events: none;
+}
+
+.text--inactive {
+    margin-bottom: 80px;
+    text-align: right;
+    color: #ff000080;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 2.7px;
+}
+
+.error-message {
+    display: block;
+    margin: 0;
+    color: #f05454;
+}

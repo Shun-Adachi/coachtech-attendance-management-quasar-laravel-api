@@ -1,0 +1,63 @@
+.table {
+    table-layout: fixed;
+    width: 100%;
+    margin: 80px auto;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+
+.table thead tr {
+    color: #737373;
+    border-bottom: 3px solid #e1e1e1;
+}
+
+.table tbody tr {
+    color: #737373;
+    border-bottom: 2px solid #e1e1e1;
+}
+
+.table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.table th {
+    padding: 10px;
+    min-width: 60px;
+}
+
+.table th:first-child {
+    padding-left: 10%;
+}
+
+.table th:last-child {
+    padding-right: 5%;
+}
+
+.name {
+    width: 35%;
+    padding-left: 10%;
+    font-weight: bold;
+}
+
+.email {
+    width: 35%;
+    padding: 10px 0px;
+    font-weight: bold;
+}
+
+.link {
+    width: 30%;
+    padding-right: 60px;
+    font-weight: bold;
+}
+
+.detail {
+    color: #000000;
+    text-decoration: none;
+}
