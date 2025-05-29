@@ -6,8 +6,28 @@ const routes: RouteRecordRaw[] = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/IndexPage.vue') },
-      // 会員登録画面
-      { path: 'register', name: 'register', component: () => import('pages/Register.vue') },
+
+      {
+        path: 'register',
+        name: 'Register',
+        component: () => import('pages/Register.vue'),
+      },
+      {
+        path: 'login',
+        name: 'Login',
+        component: () => import('pages/Login.vue'),
+      },
+      {
+        path: 'login/2fa',
+        name: 'TwoFactor',
+        component: () => import('pages/TwoFactor.vue'),
+      },
+      {
+        path: 'attendance',
+        name: 'Attendance',
+        component: () => import('pages/Attendance.vue'),
+        meta: { requiresAuth: true },
+      },
     ],
   },
 

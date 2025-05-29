@@ -6,7 +6,7 @@ import {
   createWebHistory,
 } from 'vue-router';
 import routes from './routes.js';
-
+import { useAuthStore } from 'stores/auth.js'; // Piniaストアのimport例
 /*
  * If not building with SSR mode, you can
  * directly export the Router instantiation;
@@ -31,6 +31,18 @@ export default defineRouter(function (/* { store, ssrContext } */) {
     // quasar.conf.js -> build -> vueRouterMode
     // quasar.conf.js -> build -> publicPath
     history: createHistory(process.env.VUE_ROUTER_BASE),
+  });
+
+  // ナビゲーションガード追加
+  Router.beforeEach((to, from, next) => {
+    const authStore = useAuthStore();
+
+    if (to.meta.requiresAuth && !authStore.isAuthenticated) {
+      // 認証必要で未認証ならログイン画面へ
+      next({ name: 'Login' });
+    } else {
+      next();
+    }
   });
 
   return Router;

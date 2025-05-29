@@ -20,6 +20,8 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->foreignId('role_id')->constrained()->cascadeOnDelete();
             $table->string('login_token')->nullable();
+            $table->string('two_factor_code')->nullable();
+            $table->timestamp('two_factor_expires_at')->nullable();
             $table->timestamps();
         });
     }

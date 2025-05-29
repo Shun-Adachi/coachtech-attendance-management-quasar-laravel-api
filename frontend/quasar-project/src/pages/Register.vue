@@ -105,16 +105,14 @@ const onSubmit = async () => {
     if (axios.isAxiosError(err) && err.response?.data?.errors) {
       // 型アサーションで errors の形を指定
       const errs = err.response.data.errors as Record<string, string[]>;
-      // Object.values(errs) は string[][] 型になる
       const messages = Object.values(errs).flat(); // => string[]
-      // ここで messages は string[] なので、forEach のコールバック引数は自動で string 型に！
       messages.forEach((msg) => {
         Notify.create({ type: 'negative', message: msg });
       });
     } else {
       Notify.create({
         type: 'negative',
-        message: '登録に失敗しました。時間をおいて再度お試しください。',
+        message: '登録に失敗しました。',
       });
     }
   } finally {

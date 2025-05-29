@@ -11,9 +11,7 @@ export default defineConfig((/* ctx */) => {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli-vite/boot-files
-    boot: [
-      'axios', // ← これを追加
-    ],
+    boot: ['pinia', 'axios'],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#css
     css: ['app.scss'],
@@ -88,13 +86,18 @@ export default defineConfig((/* ctx */) => {
         // フロント側で /api/** にアクセスが来たら…
         '/api': {
           // 実際の Laravel サーバーへ転送
-          target: 'http://localhost:8000',
+          target: 'http://nginx',
           changeOrigin: true,
           secure: false,
-          // 必要であればパス書き換えも可能
-          // pathRewrite: { '^/api': '/api' }
+        },
+        '/sanctum': {
+          target: 'http://nginx',
+          changeOrigin: true,
+          secure: false,
         },
       },
+
+      allowedHosts: ['nginx'],
 
       // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#framework
       framework: {
@@ -225,6 +228,10 @@ export default defineConfig((/* ctx */) => {
          */
         extraScripts: [],
       },
+    },
+
+    framework: {
+      plugins: ['Notify'],
     },
   };
 });
